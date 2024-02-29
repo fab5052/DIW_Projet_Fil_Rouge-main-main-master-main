@@ -1,14 +1,14 @@
 
-var angle = 0;
-function galleryspin(sign) { 
-  const spinner = $('#spinner');
-  if (!sign) { 
-    angle = angle + 45; 
-  } else { 
-    angle = angle - 45; 
+new Vue({
+  el: '#carousel3d',
+  data: {
+    slides: 7
+  },
+  components: {
+    'carousel-3d': window['carousel-3d'].Carousel3d,
+    'slide': window['carousel-3d'].Slide
   }
-  spinner.css("transform", "rotateY(" + angle + "deg)");
-}
+})
 
 /*$(document).ready(function () {
   const carousel = $('#carouselId');

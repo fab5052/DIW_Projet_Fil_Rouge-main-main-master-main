@@ -1,0 +1,21 @@
+
+#carousel3d{
+    .carousel-3d-slide{
+      display: flex;
+      flex:1;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background-color: #fff;
+      padding: 10px;
+      transition: all .4s;
+      &.current{
+        background-color: #333;
+        color: #fff;
+        span{
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
