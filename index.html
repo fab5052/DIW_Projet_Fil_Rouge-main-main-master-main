@@ -12,8 +12,6 @@
   <!--Custom styles for this template -->
 
 
-
-  <!-- Bootstrap core CSS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
   crossorigin="anonymous"></script>
@@ -30,10 +28,8 @@
   <script src="tarteaucitron/tarteaucitron.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
-    rel="stylesheet"
-  />
+
+
 
 
 </head>
@@ -65,7 +61,7 @@
 
 
       </div>
-      <div class="navlinks-container d-flex  ">
+      <div class="navlinks-container col-sm-6 d-flex justify-content-center vertical-align-middle ">
 
         <h3><a class="nav-link " href="index.html" aria-current="page">Accueil</a></h3>
         <h3><a class="nav-link" href="categories.html">Catégories</a></h3>
@@ -154,8 +150,13 @@
     </div>
       </div>
     -->
-    
- 
+
+  
+
+
+      
+
+
   <!--  <input type="radio" name="slider" id="item-1" checked "> 
       <input type="radio" name="slider" id="item-2">
         <input type="radio" name="slider" id="item-3"> 
@@ -164,57 +165,61 @@
             <input type="radio" name="slider" id="item-6">
             <input type="radio" name="slider" id="item-7">
             <input type="radio" name="slider" id="item-8">-->
-<div class="container" >
 
-  <div id="carousel3d" >
 
-    
-        <carousel-3d :perspective="0" :space="200" :display="7" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">
-      
-          <slide :index="0">    <span class="title neon-effect">Web Development</span> 
-          <label class="card"  for="item-1" id="song-1">
-            <img src="assets/img/images_the_district/menu-burger.jpg" >
+      <!-- Utilisez des éléments figure pour chaque élément du carousel -->
+<div class="container-fluid  col-sm-12">
+
+<div id="carousel3d" class="carousel">
+
+        <carousel-3d :perspective="30" :space="250" :display="7" :height="380" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
+          <slide :index="0">   
+             <span class="title  ">Web Development</span> 
+          <label class="card "  for="item-1" id="song-1">
+            <img class="carousel-image" src="assets/img/images_the_district/menu-burger.jpg" >
           </label></slide>
      
-          <slide :index="1">   <span class="title">You know</span>
+          <slide :index="1">   
+            <span class="title">You know</span>
           <span class="card " for="item-2" id="song-2">
-            <img src="assets/img/images_the_district/menu-pizza.jpg">
+            <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
           </span></slide>
       
-          <slide :index="2">  <span class="title">You know</span>
-          <label class="card " for="item-3" id="song-3">
-        <img src="assets/img/images_the_district/category/sandwich_cat.jpg">
-          </label></slide>
-          <slide :index="3"> 
-     
+          <slide :index="2"> 
             <span class="title">You know</span>
-          
-            <label class="card " for="item-4" id="song-4">
-            <img src="assets/img/images_the_district/food/Food-Name-433.jpeg">
+          <label class="card " for="item-3" id="song-3">
+        <img class="carousel-image"  src="assets/img/images_the_district/category/sandwich_cat.jpg">
           </label></slide>
+          
+          <slide :index="3"> 
+            <span class="title">You know</span>         
+            <label class="card " for="item-4" id="song-4">
+            <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-433.jpeg">
+          </label></slide>
+
           <slide :index="4">       
             <span class="title">You know</span>
           <label class="card" for="item-5" id="song-5">
-            <img src="assets/img/images_the_district/food/Food-Name-6340.jpg">
+            <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-6340.jpg">
           </label></slide>
+
           <slide :index="5">     
             <span class="title">You know</span>
           <label class="card " for="item-6" id="song-6">
-            <img src="assets/img/images_the_district/food/Food-Name-3631.jpg ">
+            <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-3631.jpg ">
           </label></slide>
+
           <slide :index="6">   
             <span class="title">You know</span>
           <label class="card"  for="item-7" id="song-7">
-            <img src="assets/img/images_the_district/food/pizza-salmon.png">
+            <img class="carousel-image"  src="assets/img/images_the_district/food/pizza-salmon.png">
           </label></slide>
    
         </carousel-3d>
       </div>
    
-    </div>
-    </div>
     
-
+    </div>
 
   </main>
 
@@ -281,20 +286,14 @@
 
 
 
-
- 
-
-
-
-
   <script src="toggle.js"></script>
+
   <script src="tarteaucitron.js"></script>
   <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
   <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
   <script src="carousel.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>

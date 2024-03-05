@@ -149,3 +149,4 @@ $("select").each(function() {
 		$badge.html($count++);
 	});
 }.call(this));
+
