@@ -34,7 +34,7 @@
     margin-top: 20vh; /* Marge en haut pour éviter le chevauchement avec le header */
     margin-bottom: 20vh; /* Marge en bas pour éviter le chevauchement avec le footer */
     z-index: -1;
-    height: 100vh;
+    height: 100%;
   
     
   }
@@ -168,25 +168,41 @@
     color: #e6e3e3;
   }
   
-  label {
+form {
+ 
+    justify-content: center;
+    margin: auto;
+  }
+  
+ form.form-control {
+  max-width: 60%;
+ }
+
+ label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #dcd9d9;
   }
   
-  option {
+ option {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e1dbdb;
+ ;
   }
   
+ select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e1dbdb;
+
+
+}
+
   textarea {
     height: 10vh;
-    width: 21vw;
+   
   }
   
-  
-  fieldset {
-    height: 60vw;
-  }
+
+
   @keyframes slideAnimation {
   
   0% {
@@ -488,13 +504,7 @@
   }
   
   @media (max-width: 768px) {
-  nav {
-    display: flex;
-    padding: 15px 20px;
-    position: relative;
-    background-color: #333;
-    z-index: -1;
-  }
+
   
   
   
