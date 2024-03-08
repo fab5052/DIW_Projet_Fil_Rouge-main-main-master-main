@@ -174,8 +174,9 @@ form {
     margin: auto;
   }
   
- form.form-control {
+.form-control {
   max-width: 60%;
+  justify-content: center;
  }
 
  label {
@@ -196,7 +197,7 @@ form {
 
 }
 
-  textarea {
+textarea {
     height: 10vh;
    
   }
@@ -248,15 +249,15 @@ form {
     vertical-align: middle;
     border-style: inset;
     border-image: linear-gradient(#f6b73c, #4d9f0c) 50;
+   
   }
-  
-  
+
   
   input[type=radio] {
     display:none;
   }
   
-  .card {
+  .card.cards {
     position: absolute;
     justify-content: center;
     vertical-align: middle;

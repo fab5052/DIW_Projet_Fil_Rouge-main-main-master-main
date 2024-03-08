@@ -1,122 +1,8 @@
-<!doctype html>
-<html lang="fr">
+<?php
 
-<head>
-  <meta charset="utf-8">
+require_once('header.php');
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Fil_Rouge</title>
-
-
-  <!--Custom styles for this template -->
-
-
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-   <link rel="stylesheet" href="assets/css/nav.css">
-
-  <script src="tarteaucitron/tarteaucitron.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-
-
-
-</head>
-
-
-<body>
-
-
-
-  <header>
-
-
-
-    <nav>
-
-      <a href="index.html" class="nav-icon" aria-label="homepage" aria-current="page">
-    <span ><img  class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
-
-      </a>
-
-      <div class="main-navlinks">
-        <bouton type="button" class=" toggle menu-markdown" aria-label="Toggle Navigation" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-
-          </button>
-
-
-
-      </div>
-      <div class="navlinks-container col-sm-6 d-flex justify-content-center vertical-align-middle ">
-
-        <h3><a class="nav-link " href="index.html" aria-current="page">Accueil</a></h3>
-        <h3><a class="nav-link" href="categories.html">Catégories</a></h3>
-        <h3><a class="nav-link" href="plat.html">Plats</a></h3>
-        <h3><a class="nav-link" href="contact.html">Contact</a></h3>
-
-      </div>
-
-
-
-
-
-       <!-- <input class="form-control mr-2 width: 65px height: 25px text-left" type="search" placeholder="recherche..."
-          aria-label="Search"
-          style=" opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
-
-        <button class="btn btn-outline-secondary" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-            height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"
-            style="transform: translateY(-15%) ">
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-          </svg>
-        </button>
-      </form>-->
-
-
-
-
-      <div class="nav-authentication col-2 d-flex   ">
-<div class="shopping d-flex " >
-      <a href="#">  <h3><i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></h3></a>
-       
-</div>
-<div class="sign-btns  ">    <a href="SignIn.html"> 
-  <h3> <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
-        
-          <i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
-         </div>
-
-     
-      
-          <form  class="search" id="search" action="results.php" method="GET" accept-charset="utf-8">
-          <input type="text" name="input" class="input" placeholder="Search" />
-          <button type="reset" class="search " id="search-button">
-          </form>
-        </button>
-    
-
-      </div>
-    
-
-  
-    
-    </nav>
-  </header>
+?>
 
 
 
@@ -175,43 +61,46 @@
         <carousel-3d :perspective="30" :space="250" :display="7" :height="380" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
           <slide :index="0">   
              <span class="title  ">Web Development</span> 
-          <label class="card "  for="item-1" id="song-1">
-            <img class="carousel-image" src="assets/img/images_the_district/menu-burger.jpg" >
-          </label></slide>
+          <label class="card cards "  for="item-1" id="song-1">
+            <img class="carousel-image pos" src="assets/img/images_the_district/menu-burger.jpg" >
+          </label>
+      
+          <a class="btn btn-secondary position-relative " href="#" role="button">View details &raquo;</a>
+        </div></slide>
      
           <slide :index="1">   
             <span class="title">You know</span>
-          <span class="card " for="item-2" id="song-2">
+          <span class="cards " for="item-2" id="song-2">
             <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
           </span></slide>
       
           <slide :index="2"> 
             <span class="title">You know</span>
-          <label class="card " for="item-3" id="song-3">
+          <label class="cards" for="item-3" id="song-3">
         <img class="carousel-image"  src="assets/img/images_the_district/category/sandwich_cat.jpg">
           </label></slide>
           
           <slide :index="3"> 
             <span class="title">You know</span>         
-            <label class="card " for="item-4" id="song-4">
+            <label class="cards " for="item-4" id="song-4">
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-433.jpeg">
           </label></slide>
 
           <slide :index="4">       
             <span class="title">You know</span>
-          <label class="card" for="item-5" id="song-5">
+          <label class="cards" for="item-5" id="song-5">
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-6340.jpg">
           </label></slide>
 
           <slide :index="5">     
             <span class="title">You know</span>
-          <label class="card " for="item-6" id="song-6">
+          <label class="cards " for="item-6" id="song-6">
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-3631.jpg ">
           </label></slide>
 
           <slide :index="6">   
             <span class="title">You know</span>
-          <label class="card"  for="item-7" id="song-7">
+          <label class="cards"  for="item-7" id="song-7">
             <img class="carousel-image"  src="assets/img/images_the_district/food/pizza-salmon.png">
           </label></slide>
    
@@ -336,92 +225,8 @@
   </main>
 
 
-<footer>
-   
-    <div class="container-fluid col-10 text-muted ">
-      <div class="column-gap-md-2">
-   
-   
+  <?php
 
+  require_once('footer.php');
   
-        <div class="col-md-3">
-          <h3 class="h3">A propos</h3>
-     
-      
-            <li><a href="#">Service clients</a></li>
-            <li><a href="#">Autre</a></li>
-       
-        </div>
-     
-        <div class="col-md-3">
-          <h3 class="h3">Partners</h3>
-       
-
-            <li><a href="#">MIO</a></li>
-
-         
-        </div>
-
-        <div class="col-md-3">
-          <h3 class="h3">Service clents</h3>
-   
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">03 22 453 352</a></li>
-
-         
-        </div>
-        
-        <div class="col-md-3">
-         
-          <h3 class="h3">Socials</h3>
-     
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        
-        </div>
-  
-   <div class="col-md-3 ">
-    <p class="d-block "><a href="#">Revenir en haut ▲</a></p>
-
-  <p class=" ">@ 2017-2024 &middot;<a href="#">Tous droits &middot;</a><a href="#"> réservés</a></p>
-</div>
-
-</div>
-    </div>
-
-  </footer>
-
-
-
-  </div>
-
-
-
-  <script src="toggle.js"></script>
-
-  <script src="tarteaucitron.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
-  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
-  <script src="carousel.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
-    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-
-
-</body>
-
-
-</html>
+  ?>
