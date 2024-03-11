@@ -59,16 +59,15 @@
   </div>
 
 
+  <script src="script.js"></script>
+  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
 
   <script src="toggle.js"></script>
 
 <script src="carousel.js" ></script>
   <script src="plat.js"></script>
   <script src="tarteaucitron.js"></script>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
-  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
-  <script src="carousel.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

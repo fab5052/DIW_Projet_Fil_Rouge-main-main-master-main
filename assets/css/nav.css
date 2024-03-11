@@ -11,7 +11,7 @@
     width: 100%;
     height: 15vw;
     vertical-align: middle;
-    z-index: 1; /* Assure que le header reste au-dessus du contenu */
+    z-index: 100; /* Assure que le header reste au-dessus du contenu */
     /* Autres styles personnalisés selon vos besoins */
   }
   
@@ -20,8 +20,8 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 20vh;
-    z-index: 0; /* Assure que le footer reste au-dessus du contenu */
+    height: 15vh;
+    z-index: 100; /* Assure que le footer reste au-dessus du contenu */
     color: #3391b3; /* Couleur du texte dans le footer */
   
   
@@ -33,7 +33,7 @@
   .main-content {
     margin-top: 20vh; /* Marge en haut pour éviter le chevauchement avec le header */
     margin-bottom: 20vh; /* Marge en bas pour éviter le chevauchement avec le footer */
-    z-index: -1;
+  
     height: 100%;
   
     
@@ -230,62 +230,85 @@ textarea {
   
   }
   
+
   
-  
-  .carousel{
+slide .carousel{
     display: block;
-   background-color: #6f6d7227;
+  position: relative;
     justify-items: center;
     transition: background 0.4s ease-in;
+ 
     margin: 3rem;
-    border: 0.2em solid ;
-    border-color: #979292;
+  
   }
   
-  .carousel-image {
+.carousel-image {
     display: flex;
     height: auto; /* Définissez une hauteur maximale pour les images */
     width: auto; /* Ajustez automatiquement la largeur en fonction de la hauteur maximale */
-    vertical-align: middle;
-    border-style: inset;
-    border-image: linear-gradient(#f6b73c, #4d9f0c) 50;
    
+    transform: translate(0, 0%);
+    z-index: -1;
   }
 
-  
-  input[type=radio] {
+
+
+input[type=radio] {
     display:none;
   }
   
-  .card.cards {
+.cards {
     position: absolute;
     justify-content: center;
-    vertical-align: middle;
+
     width: 100%;
   
     height: auto;
     border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
-    margin: auto;
+  
     transition: transform 0.5s ease;
+
     cursor: pointer;
     background-color: transparent;
     border: none;
+
+  }
+
+
+.carousel-button {
+    z-index: 1;
+   margin: 100%;
+    position: relative;
+
   }
   
-  
-  span.title  {
+ span.title  {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    font-weight: 800;
-    color: #1b5970;
+    width: 40%;
+    height: 10%;
+    text-align: center;
+    font-size: x-large;
+
+    font-weight: 1000;
+    font-family: "neon-tubes-2-regular";
+    z-index: 2;
+    justify-content: unset;
+    justify-items: center;
+    background-color: #3c505b77;
+    position: relative;
+   margin-bottom: 10;
+  vertical-align: middle;
+    letter-spacing: 0.05rem;
+    padding: 500;
+   
     
-    justify-content: center;
-    background-color: #ca99648e;
   }
   
   
-  
+  hr {
+    height: 1.2rem;
+
+  }
   
   
   

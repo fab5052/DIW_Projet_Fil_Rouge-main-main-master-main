@@ -58,57 +58,51 @@ require_once('header.php');
 
 <div id="carousel3d" class="carousel">
 
-        <carousel-3d :perspective="30" :space="250" :display="7" :height="380" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
-          <slide :index="0">   
-             <span class="title  ">Web Development</span> 
-          <label class="card cards "  for="item-1" id="song-1">
-            <img class="carousel-image pos" src="assets/img/images_the_district/menu-burger.jpg" >
-          </label>
-      
-          <a class="btn btn-secondary position-relative " href="#" role="button">View details &raquo;</a>
-        </div></slide>
+        <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
+          <slide :index="0">    
+          <label class="cards d-flex"  for="item-1" id="song-1">   
+          <span class="title d-block  position-absolute " >Burger<a class="carousel btn btn-primary d-block position-absolute bottom-0 start-100 " href="#" role="button">Details</a></span>  <img class="carousel-image " src="assets/img/images_the_district/menu-burger.jpg" >
+          </label></slide>
      
-          <slide :index="1">   
-            <span class="title">You know</span>
-          <span class="cards " for="item-2" id="song-2">
-            <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
-          </span></slide>
+          <slide :index="1">       
+         <label class="cards " for="item-2" id="song-2">  
+           <span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute pt-100" href="#" role="button">Details</a></span>   <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
+          </label></slide>
       
-          <slide :index="2"> 
-            <span class="title">You know</span>
-          <label class="cards" for="item-3" id="song-3">
+          <slide :index="2">    
+          <label class="cards" for="item-3" id="song-3"><span class="title d-block position-absolute " >Sandwichs<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
         <img class="carousel-image"  src="assets/img/images_the_district/category/sandwich_cat.jpg">
           </label></slide>
           
-          <slide :index="3"> 
-            <span class="title">You know</span>         
-            <label class="cards " for="item-4" id="song-4">
+          <slide :index="3">        
+            <label class="cards " for="item-4" id="song-4"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-433.jpeg">
           </label></slide>
 
           <slide :index="4">       
-            <span class="title">You know</span>
-          <label class="cards" for="item-5" id="song-5">
+          <label class="cards" for="item-5" id="song-5"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-6340.jpg">
           </label></slide>
 
           <slide :index="5">     
-            <span class="title">You know</span>
-          <label class="cards " for="item-6" id="song-6">
+          <label class="cards " for="item-6" id="song-6"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-3631.jpg ">
           </label></slide>
 
           <slide :index="6">   
-            <span class="title">You know</span>
-          <label class="cards"  for="item-7" id="song-7">
+          <label class="cards"  for="item-7" id="song-7"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
             <img class="carousel-image"  src="assets/img/images_the_district/food/pizza-salmon.png">
           </label></slide>
    
         </carousel-3d>
       </div>
-   
-    
+
+
+    <hr class="featurette-divider">
+      
     </div>
+  
+
 
     <div class="container marketing">
 
@@ -125,7 +119,7 @@ require_once('header.php');
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
             vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
             magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+         
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +211,7 @@ require_once('header.php');
           </svg>
 
         </div>
-      </div>
+
 
       <hr class="featurette-divider">
 
