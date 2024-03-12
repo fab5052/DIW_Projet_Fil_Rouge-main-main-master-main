@@ -15,84 +15,84 @@ require_once('header.php');
         <i class="neon-blue">District</i>
       </h1>
 
-     <!-- <div class="container-fluid d-flex position-relative justify-content-center">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-         
-          <div id="carouseId" class="carousel-inner">
-           
-            <figure id="spinner" class="carousel-inner" >
 
-     
-            </div>
   
-          </figure>
-          <a >
-            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-          </a>
-          <a>
-            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span> 
-          </a>
-       
-    </div>
+
+<div class="camera_wrap " id="camera_wrap_2">
+      <div data-thumb="img/camera/slides/thumbs/bridge.jpg" data-src="img/camera/slides/bridge.jpg">
+          <div class="camera_caption fadeFromBottom">
+            
+          </div>
       </div>
-    -->
-
-  
-
+      <div data-thumb="img/camera/slides/thumbs/leaf.jpg" data-src="img/camera/slides/leaf.jpg">
+          <div class="camera_caption fadeFromBottom">
+          </div>
+      </div>
+      <div data-thumb="img/camera/slides/thumbs/road.jpg" data-src="img/camera/slides/road.jpg">
+          <div class="camera_caption fadeFromBottom">
+          
+          </div>
+      </div>
+      <div data-thumb="img/camera/slides/thumbs/sea.jpg" data-src="img/camera/slides/sea.jpg">
+          <div class="camera_caption fadeFromBottom">
+             
+          </div>
+      </div>
+      <div data-thumb="img/camera/slides/thumbs/shelter.jpg" data-src="img/camera/slides/shelter.jpg">
+          <div class="camera_caption fadeFromBottom">
+             
+          </div>
+      </div>
+      <div data-thumb="img/camera/slides/thumbs/tree.jpg" data-src="img/camera/slides/tree.jpg">
+          <div class="camera_caption fadeFromBottom">
+            
+          </div>
+      </div>
 
       
 
 
-  <!--  <input type="radio" name="slider" id="item-1" checked "> 
-      <input type="radio" name="slider" id="item-2">
-        <input type="radio" name="slider" id="item-3"> 
-          <input type="radio" name="slider" id="item-4">  
-            <input type="radio" name="slider" id="item-5"> 
-            <input type="radio" name="slider" id="item-6">
-            <input type="radio" name="slider" id="item-7">
-            <input type="radio" name="slider" id="item-8">-->
 
-
-      <!-- Utilisez des éléments figure pour chaque élément du carousel -->
 <div class="container-fluid  col-sm-12">
 
-<div id="carousel3d" class="carousel">
+<div id="carousel3d" class="carousel ">
 
         <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
           <slide :index="0">    
           <label class="cards d-flex"  for="item-1" id="song-1">   
-          <span class="title d-block  position-absolute " >Burger<a class="carousel btn btn-primary d-block position-absolute bottom-0 start-100 " href="#" role="button">Details</a></span>  <img class="carousel-image " src="assets/img/images_the_district/menu-burger.jpg" >
-          </label></slide>
+          <span class="title d-flex   " > &nbspBurger<a class="carousel btn btn-primary " href="#" role="button">Details</a> </span>  </label>   <img class="carousel-image"  src="assets/img/images_the_district/menu-burger.jpg">
+         </slide>
      
           <slide :index="1">       
-         <label class="cards " for="item-2" id="song-2">  
-           <span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute pt-100" href="#" role="button">Details</a></span>   <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
-          </label></slide>
+         <label class="cards d-flex " for="item-2" id="song-2">  
+           <span class="title d-flex " >&nbspPizza<a class="carousel btn btn-primary " href="#" role="button">Details</a></span> </label>  <img class="carousel-image" src="assets/img/images_the_district/menu-pizza.jpg">
+          </slide>
       
           <slide :index="2">    
-          <label class="cards" for="item-3" id="song-3"><span class="title d-block position-absolute " >Sandwichs<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
+          <label class="cards d-flex" for="item-3" id="song-3">
+            <span class="title d-flex" >&nbspSandwichs<a class="carousel btn btn-primary " href="#" role="button">Details</a></span>  </label>
         <img class="carousel-image"  src="assets/img/images_the_district/category/sandwich_cat.jpg">
-          </label></slide>
+         </slide>
           
           <slide :index="3">        
-            <label class="cards " for="item-4" id="song-4"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
+            <label class="cards d-flex  " for="item-4" id="song-4"><span class="title d-flex " >&nbspPizza<a class="carousel btn btn-primary " href="#" role="button">Details</a></span> </label>
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-433.jpeg">
-          </label></slide>
+          </slide>
 
           <slide :index="4">       
-          <label class="cards" for="item-5" id="song-5"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
+          <label class="cards d-flex  " for="item-5" id="song-5"><span class="title d-flex " >&nbspPizza<a class="carousel btn btn-primary" href="#" role="button">Details</a></span>   </label>
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-6340.jpg">
-          </label></slide>
+        </slide>
 
           <slide :index="5">     
-          <label class="cards " for="item-6" id="song-6"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
+          <label class="cards d-flex  " for="item-6" id="song-6"><span class="title d-flex " >&nbspPizza<a class="carousel btn btn-primary" href="#" role="button">Details</a></span>  </label> 
             <img class="carousel-image"  src="assets/img/images_the_district/food/Food-Name-3631.jpg ">
-          </label></slide>
+        </slide>
 
           <slide :index="6">   
-          <label class="cards"  for="item-7" id="song-7"><span class="title d-block position-absolute " >Pizza<a class="carousel btn btn-primary d-block position-absolute" href="#" role="button">Details</a></span> 
+          <label class="cards d-flex "  for="item-7" id="song-7"><span class="title d-flex " >&nbspPizza<a class="carousel btn btn-primary" href="#" role="button">Details</a></span>    </label>
             <img class="carousel-image"  src="assets/img/images_the_district/food/pizza-salmon.png">
-          </label></slide>
+       </slide>
    
         </carousel-3d>
       </div>
