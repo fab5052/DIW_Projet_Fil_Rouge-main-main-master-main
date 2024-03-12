@@ -1,13 +1,13 @@
 <footer>
 
 
- 
+  <p class="float-right p-4"><a href="#">Revenir en haut ▲</a></p>
   <div class="container">
 
     <div class="row">
 
 
-    <p class="float-right p-4"><a href="#">Revenir en haut ▲</a></p>
+
 
 
       <div class="col-md-3">
@@ -49,7 +49,6 @@
 
     <p class="droits m-4">@ 2017-2024 &middot;<a href="#">Tous droits &middot;</a><a href="#"> réservés</a></p>
   </div>
-  <p class="float-right p-4"><a href="#">Revenir en haut ▲</a></p>
 
 </footer>
 
@@ -60,30 +59,20 @@
 
 
 
+  <script src='assets/js/camera.min.js'></script>
+    <script src='assets/js/jquery.js'></script>
 
 
- 
 
 <script src="toggle.js"></script>
+
+<script src="carousel.js" ></script>
   <script src="plat.js"></script>
   <script src="tarteaucitron.js"></script>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
   <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
   <script src="carousel.js"></script>
-  <script>
-  
-
-  jQuery('#camera_wrap_2').camera({
-    height: '400px',
-    loader: 'bar',
-    pagination: false,
-    thumbnails: true
-  });
-
-</script>
-
-<script src='assets/js/camera.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

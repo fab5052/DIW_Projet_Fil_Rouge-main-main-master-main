@@ -18,7 +18,7 @@ require_once('header.php');
 
   
 
-<div class="camera_wrap " id="camera_wrap_2">
+<div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
       <div data-thumb="img/camera/slides/thumbs/bridge.jpg" data-src="img/camera/slides/bridge.jpg">
           <div class="camera_caption fadeFromBottom">
             
@@ -50,6 +50,18 @@ require_once('header.php');
       </div>
 
       
+
+      <script>
+    jQuery(function(){
+
+      jQuery('#camera_wrap_2').camera({
+        height: '400px',
+        loader: 'bar',
+        pagination: false,
+        thumbnails: true
+      });
+    });
+  </script>
 
 
 
