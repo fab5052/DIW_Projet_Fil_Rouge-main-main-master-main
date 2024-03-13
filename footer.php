@@ -59,7 +59,7 @@
 
 
 
-  <script src='assets/js/camera.min.js'></script>
+  <script src=' camera.min.js'></script>
     <script src='assets/js/jquery.js'></script>
 
 

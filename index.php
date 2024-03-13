@@ -51,20 +51,6 @@ require_once('header.php');
 
       
 
-      <script>
-    jQuery(function(){
-
-      jQuery('#camera_wrap_2').camera({
-        height: '400px',
-        loader: 'bar',
-        pagination: false,
-        thumbnails: true
-      });
-    });
-  </script>
-
-
-
 <div class="container-fluid  col-sm-12">
 
 <div id="carousel3d" class="carousel ">
