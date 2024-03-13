@@ -22,7 +22,7 @@
 	display: none;
 	float: left;
 	position: relative;
-	z-index: 0;
+
 }
 .camera_wrap img {
 	max-width: none!important;

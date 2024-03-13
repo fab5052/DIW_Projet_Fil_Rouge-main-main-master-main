@@ -16,9 +16,11 @@ require_once('header.php');
       </h1>
 
 
-  
 
-<div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+<div class="container-fluid d-block">
+
+
+<div class="camera_wrap camera_magenta_skin  " id="camera_wrap_2">
       <div data-thumb="img/camera/slides/thumbs/bridge.jpg" data-src="img/camera/slides/bridge.jpg">
           <div class="camera_caption fadeFromBottom">
             
@@ -48,8 +50,9 @@ require_once('header.php');
             
           </div>
       </div>
+</div>
 
-      
+
 
 <div class="container-fluid  col-sm-12">
 
@@ -58,7 +61,7 @@ require_once('header.php');
         <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :widht="400" :border="4" :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="true" :autoplay-timeout="5000">      
           <slide :index="0">    
           <label class="cards d-flex"  for="item-1" id="song-1">   
-          <span class="title d-flex   " > &nbspBurger<a class="carousel btn btn-primary " href="#" role="button">Details</a> </span>  </label>   <img class="carousel-image"  src="assets/img/images_the_district/menu-burger.jpg">
+          <span class="title d-flex   " > &nbspBurger<a class="carousel btn btn-primary " href="#" role="button">Details</a> </span>  </label>   <img class="carousel-image "  src="assets/img/images_the_district/menu-burger.jpg">
          </slide>
      
           <slide :index="1">       

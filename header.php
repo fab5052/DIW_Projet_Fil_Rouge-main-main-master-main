@@ -27,8 +27,9 @@
   <script src="tarteaucitron/tarteaucitron.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link rel="stylesheet" href="assets/css/nav.css">
+<link rel="stylesheet"href="assets/css/camera.css" >
+<link rel="stylesheet"href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/nav.css">
 
 
 

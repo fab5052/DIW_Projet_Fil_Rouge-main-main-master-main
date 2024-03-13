@@ -1,7 +1,7 @@
 <footer>
 
 
-  <p class="float-right p-4"><a href="#">Revenir en haut ▲</a></p>
+  <p class="pull-right p-4"><a href="#">Revenir en haut ▲</a></p>
   <div class="container">
 
     <div class="row">
@@ -59,8 +59,6 @@
 
 
 
-  <script src=' camera.min.js'></script>
-    <script src='assets/js/jquery.js'></script>
 
 
 
@@ -71,8 +69,21 @@
   <script src="tarteaucitron.js"></script>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
-  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
-  <script src="carousel.js"></script>
+
+  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script> 
+  <script>
+  new Vue({
+  el: '#carousel3d',
+  data: {
+    slides: 7
+  },
+  components: {
+    'carousel-3d': window['carousel-3d'].Carousel3d,
+    'slide': window['carousel-3d'].Slide
+  }
+})
+</script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -86,9 +97,29 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
     <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
- 
+
+    
+<script src="assets/js/jquery.min.js"></script>
 
 
+    
+<script src="assets/js/bootstrap-carousel.js"></script>
+<script src='assets/js/bootstrap-collapse.js'></script>
+
+<script src='assets/js/jquery.easing.1.3.js'></script>
+<script src='assets/js/bootstrap-tooltip.js'></script>
+<script src="assets/js/camera.min.js"></script>
+<script>
+  jQuery(function(){
+
+    jQuery('#camera_wrap_2').camera({
+      height: '400px',
+      loader: 'bar',
+
+      thumbnails: true
+    });
+  });
+</script>
 
 </body>
 
